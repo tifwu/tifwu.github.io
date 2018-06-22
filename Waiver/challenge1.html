@@ -8,12 +8,26 @@
     
     <script>
 	function toggleEmail(){
-		/*    YOUR JavaScript/jQuery CODE HERE */ 
+		/*    YOUR JavaScript/jQuery CODE HERE */
+        var field = document.getElementById("emailfield");
+        var checkBox = document.getElementById("subscribe");
 
-	} 
+        if (checkBox.checked == true){
+            field.style.display = "block";
+        } else {
+            field.style.display = "none";
+        }
+	}
+
+	function hideEmail() {
+        var field = document.getElementById("emailfield");
+
+        field.style.display = "none";
+    }
     </script>
+
   </head>
-  <body>
+  <body onload="hideEmail()">
     <h1>Challenge One</h1>
     <form action="challenge2.html">
       <fieldset>

@@ -6,7 +6,17 @@
     <script>
     function checkForm(){
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
-		} 
+	    s = document.getElementById("opt-straw");
+        b = document.getElementById("opt-blue");
+
+        if (s.checked == true || b.checked == true){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
     </script>
 </head>
 <body>
@@ -18,10 +28,10 @@
         <div>
           What's your favorite berry?: 
           <label>
-            <input type="radio" value = "s" id="opt-straw"> Strawberries
+            <input type="radio" value = "s" id="opt-straw" name="fruit"> Strawberries
           </label>
           <label>
-            <input type="radio" value = "b" id="opt-blue"> Blueberries
+            <input type="radio" value = "b" id="opt-blue" name="fruit"> Blueberries
         </label>
       </div>
   </fieldset>

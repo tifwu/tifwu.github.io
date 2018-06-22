@@ -7,6 +7,17 @@
     <script>
 	   function setHomeAddress(){
       // YOUR  JavaScript/jQuery CODE HERE
+           var checkBox = document.getElementById("useBilling");
+           var billingAdd = document.getElementById("billing").value;
+
+           if (checkBox.checked == true){
+               document.getElementById("home").value = billingAdd;
+               document.getElementById("home").disabled = true;
+           }
+           else{
+               document.getElementById("home").disabled = false;
+               document.getElementById("home").value = '';
+           }
      }
     </script>
 </head>
