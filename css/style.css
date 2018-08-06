@@ -422,7 +422,9 @@ CONTENT
   /*width: 1140px;*/
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 8.33333333%;
+  /*margin-top: 200px;
+  margin-bottom: 250px;*/
+  /*margin-left: 8.33333333%;*/
   padding-top: 10%;
   padding-bottom: 15%;
   background-image: url(../img/landing2.jpg);
@@ -460,7 +462,6 @@ CONTENT
             animation: blink 0.7s infinite;
             font-size: 42px;
           }
-
 
 .portfolio-grid .grid-item img {
   display: block;
